@@ -1,0 +1,703 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #888;*/
+    background: linear-gradient(130deg, #231a6f, #2eccbf);
+    font-family: Arial, sans-serif;
+}
+
+.header_section{
+    background: linear-gradient(130deg, #231a6f, #2ecc71);
+}
+/*
+.button{
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+*/
+
+
+.container {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Basic styling for the profile section */
+.profile-section {
+
+    width: 95%;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    background: white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding-right: 20px;
+    justify-content: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.title-section {
+    width: 95%;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 20px;
+    border: none;
+    justify-content: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top-section {
+    
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Profile picture */
+.image-area {
+    position: relative;
+    text-align: left;
+    flex: 0 0 auto;
+    height: 160px;
+    width: 240px;
+    
+}
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Text next to the profile picture */
+
+.profile-text {
+    width: 307px;;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+/* "Change photo" button */
+.change-photo-button {
+    background-color: #0078D4;
+    color: #fff;
+    border: none; 
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: transparent;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    user-select: none;
+}
+
+.change-photo {
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+
+}
+
+
+
+.bottom-section {
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 20px;
+    border-top:2px solid gray;
+    justify-content: space-between;
+}
+
+.bottom-section label {
+    font-weight: 600;
+    align-items: center;
+}
+
+.text-box {
+    margin-left: 10%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.text-label {
+    margin-left: 10%;
+    margin-bottom: -5px;
+    width: 80%;
+    overflow: hidden;
+}
+.close-btn {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(50, 49, 48);
+    padding: 6px 6px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.close-btn:hover {
+    background-color: #cfcfcf;
+    border-radius: 0 8px 0 8px ;
+}
+
+
+.info-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    align-items: center; /* Add this line to align items vertically */
+}
+
+
+
+.title {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevents the title from wrapping */
+    overflow: hidden; /* Ensures the text doesn't overflow */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+  }
+
+
+.edit-info {
+    font-size: 15px;
+    justify-content: center;
+    align-self: end;
+    color: #0078D4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.info-item label {
+    flex-basis: 30%;
+    font-weight: bold;
+}
+
+.info-item span {
+    flex-basis: 60%;
+}
+
+.info-item p {
+    flex-basis: 100%;
+    font-size: 14px;
+    color: #888;
+}
+
+@media screen and (max-width: 600px) {
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.title-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.change-pw{
+    color: black;
+}
+
+.change-pw:hover{
+    color: #0078D4;
+    text-decoration: underline;
+}
+
+/* styles.css */
+.modal {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    display: none; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    outline: transparent solid 3px;
+    max-height: calc(100% - 32px);
+    max-width: 480px;
+    min-height: 176px;
+    min-width: auto;
+    overflow-y: auto;
+    padding-top: 8px;
+    top: 0px;
+}
+
+.ttl1{
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(50, 49, 48);
+    display: inline;
+    line-height: 1.4;
+}
+.picker{
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 32px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    width: 256px;
+    height: 256px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+
+.user-photo {
+    border-radius: 50%;
+    background-color: transparent;
+    height: inherit(photo-container);
+    width: inherit(photo-container);
+
+    /* Additional styling for the user photo */
+}
+
+.root-286 {
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Center horizontally */
+    bottom: 0; /* Center vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.267s ease 0s;
+    z-index: 9999;
+    height: fit-content;
+    margin: auto;
+}
+
+
+.img-render {
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(50, 49, 48);
+    visibility: visible;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none; /* Initially hidden */
+}
+
+.view-section-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    padding-left: 20px;
+    background-color: rgb(160, 157, 157);
+    border-radius: 8px;
+    box-shadow: 0 20px rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.image-frame {
+    width: 100%; /* Full width */
+    display: flex; /* Block level element */
+    margin: 20px auto 20px; /* Centered with margin below */
+    justify-content: center;
+    align-items:center ;
+    margin-top: 20px;
+
+    
+  
+  img {
+    width: 400px; /* Responsive image width */
+    height: 400px; /* Maintain aspect ratio */
+    border: 0; /* No border */
+    border-radius: 50%;
+  }}
+
+/* Style the buttons as needed */
+.zoom-button{
+    flex: 0 1 100%;
+    height: 44px;
+    border: none;
+    background: transparent;
+}
+.rotate-button{
+    flex: 0 1 100%;
+    height: 44px;
+    border: none;
+    background: transparent;
+}
+
+.image_editer{
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+.remove-button{
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 4px;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    color: rgb(0, 111, 201);
+    background-color: transparent;
+    user-select: none;
+}
+
+.actions-right{
+    align-items: center;
+    display: flex;
+    font-size: 0px;
+    justify-content: flex-end;
+    margin-right: 14px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.save-button{
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid rgb(0, 111, 201);
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 16px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 80px;
+    height: unset;
+    background-color: rgb(0, 111, 201);
+    color: rgb(242, 242, 242);
+    min-height: 32px;
+    user-select: none;
+    margin-right:8px;
+}
+.cancel-button {
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid rgb(138, 136, 134);
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 16px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 80px;
+    height: unset;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 49, 48);
+    min-height: 32px;
+    user-select: none;
+}
+
+.change-button:hover{
+    text-decoration: underline;
+    color: #0078D4;
+}
+
+.remove-button:hover{
+    text-decoration: underline;
+    color: #0078D4;
+}
+
+.root-287{
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgb(24, 46, 24);
+    background-image: url("/images/view_card_1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.267s ease 0s;
+    z-index: 9999;
+}
+
+
+
+.ttl2{
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: inline;
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.picker-1{
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 32px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.plant-photo-container {
+    position: relative;
+    overflow: hidden;
+    width: 156px;
+    height: 156px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    z-index:-887;
+}
+
+.plant-photo {
+    border-radius: 50%;
+    background-color: transparent;
+    height: inherit(plant-photo-container);
+    width: inherit(plant-photo-container);
+
+    /* Additional styling for the user photo */
+}
+
+.plant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    align-self: stretch;
+    margin-left: 24px;
+}
+
+
+
+
+.input-group{
+    margin: 20px;
+    display: block;
+
+}
+
+.input-group label {
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .54);
+}
+
+.date-input {
+    display: flex;
+    width: 440px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.date-input select {
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+
+}
+
+.country-input select{
+    width: 440px;
+    text-align: center;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+

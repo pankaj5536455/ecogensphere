@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #e5eaed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.background-img img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
+.error-container {
+    text-align: center;
+    margin-top: -50px;
+    background: transparent;
+}
+
+.error-message {
+    font-size: 1.9em;
+    color: #777;
+    margin: 20px 0;
+}
+
+.back-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.8em;
+}

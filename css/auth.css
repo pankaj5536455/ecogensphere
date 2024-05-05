@@ -1,0 +1,332 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    scrollbar-width: 20px;
+    scroll-behavior: auto;
+    scrollbar-color: grey;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    min-height: 100vh;
+    background-size: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  
+  .wrapper {
+    position: relative;
+    width: 800px;
+    height: 440px;
+    background: transparent;
+    border-radius: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    padding-right: 70px;
+    justify-content: right;
+    align-items: center;
+    z-index: 99;
+  }
+  
+  .wrapper .disp {
+    position: fixed;
+    left: 0px;
+    border-radius: 20px;
+    margin-right: 20px;
+    height: 440px;
+    max-width: 414px;
+  }
+  
+  .wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 0 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .wrapper .form-box.login {
+    overflow: hidden;
+    transition: transform .18s ease;
+    transform: translatex(0);
+  }
+  
+  .form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+  }
+  
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transform: translateY(50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .input-box input:focus~label,
+  .input-box input:valid~label {
+    top: -15px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+  }
+  
+  .remember-forget {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .remember-forget label input {
+    color: #162938;
+    margin-right: 3px;
+  }
+  
+  .remember-forget a {
+    text-align: end;
+    color: #162938;
+    text-decoration: none;
+  }
+  
+  .remember-forget a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .login-register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+  }
+  
+  .login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .login-register p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 800px) {
+    .wrapper {
+      width: 400px;
+      padding-right: 0; /* Remove right padding to prevent overflow */
+    }
+  
+    .wrapper .disp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      margin-right: 0;
+    }
+  
+    .wrapper .form-box.login {
+      position: relative;
+      z-index: 1;
+      margin: 60px;
+    }
+  
+    .wrapper .form-box.register {
+      position: relative;
+      z-index: 1;
+      margin: 60px;
+    }
+  
+    .form-box h2 {
+      text-align: center; /* Center align the text within the form */
+    }
+  }
+  .social-media-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .social-media-buttons a img {
+    width: 30px; /* Adjust the size as needed */
+  }
+
+  @media (max-width: 768px) {
+    .social-media-buttons a img {
+      width: 25px; /* Adjust the size as needed */
+    }
+  }
+  .root-286 {
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Center horizontally */
+    bottom: 0; /* Center vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.267s ease 0s;
+    z-index: 9999;
+    height: fit-content;
+    margin: auto;
+}
+  
+.modal {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  display: none; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  outline: transparent solid 3px;
+  max-height: calc(100% - 32px);
+  max-width: 480px;
+  min-height: 56px;
+  min-width: auto;
+  overflow-y: auto;
+  padding-top: 25px;
+  padding-bottom:25px;
+  top: 0px;
+}
+
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Padding around the message */
+  border-radius: 5px; /* Rounded corners */
+  margin: 20px auto; /* Center the message horizontally */
+  max-width: 400px; /* Limit the width of the message */
+  text-align: center; /* Center align the text */
+  font-weight: 600;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.crop-info {
+  width: 90%;
+  height: 40%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* Hover effect */
+.crop-info:hover {
+  height: auto; /* Expand div to display all information */
+}
+
+/* Styles for the content inside the div */
+.crop-info-content {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Style for the image */
+.crop-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: block;
+  margin-bottom: 10px; /* Adjust spacing between each li */
+}
